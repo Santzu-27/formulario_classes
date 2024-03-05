@@ -50,7 +50,7 @@ class Form {
         valid = false;
       }
       if(field.value && field.id === 'rep-senha'){
-        this.passValidation(field);
+        valide = this.passValidation(field);
       }
     }
     return valid;
