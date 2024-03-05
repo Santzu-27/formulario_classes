@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Form</title>
+</head>
+<body>
+    <main>
+        <div>
+            <h1>Formulário de cadastro</h1>
+            <ul>
+                <li>Nenhum campo pode estar vazio</li>
+                <li>'Usuário' só poderá conter letras e/ou números</li>
+                <li>'Usuário' deve ter entre 3 e 12 caracteres</li>
+                <li>A senha deve ter entre 6 e 30 caracteres</li>
+            </ul>
+        </div>
+        <form id="form">
+            <div class="campos">
+                <label for="nome">Nome:</label>
+                <input class="campo" id="nome" type="text" >
+            </div>
+            <div class="campos">
+                <label for="sobrenome">Sobrenome:</label>
+                <input class="campo" id="sobrenome" type="text" >
+            </div>
+            <div class="campos">
+                <label for="CPF">CPF:</label>
+                <input class="campo" id="CPF" type="text" >
+            </div>
+            <div class="campos">
+                <label for="usuario">Usuário:</label>
+                <input class="campo" id="usuario" type="text" >
+            </div>
+            <div class="campos">
+                <label for="senha">Senha:</label>
+                <input class="campo" id="senha" type="password" >
+            </div>
+            <div class="campos">
+                <label for="rep-senha">Repetir a senha:</label>
+                <input class="campo" id="rep-senha" type="password" >
+            </div>
+            <div>
+                <button type="submit" id="button">Enviar</button>
+            </div>
+        </form>
+    </main>
+    <script src="js/script.js"></script>
+    <script src="js/Cpf.js"></script>
+
+</body>
+</html>
